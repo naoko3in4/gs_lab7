@@ -1,0 +1,164 @@
+@charset "UTF-8";
+
+* {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+  font-size: 62.5%;
+  font-size: 1rem;
+}
+
+body {
+  font-family: 'Dosis', sans-serif;
+  font-family: 'Sawarabi Mincho', sans-serif;
+  background-color: #FFF8DC;
+  color: #331d14;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+  user-select: none;
+}
+
+#hero {
+  width: 100vw;
+  letter-spacing: 1px;
+  margin: 0 auto;
+  padding: 6rem 0 10rem;
+  background-image:  url(../img/walking-woman-on-sand.jpg);
+  background-size: cover; 
+  background-position: 20% 70%; 
+  filter: contrast(200%);
+}
+
+nav {
+  margin-bottom: 5rem;
+}
+
+nav ul{
+  display: inline;
+}
+
+nav li{
+  display: inline;
+}
+
+nav li:first-child {
+  padding-right: 1rem;
+}
+
+#about-link {
+  margin-left: 0;
+}
+
+nav a {
+  color: #331d14;
+}
+
+h1 {
+  font-size: 1.3rem;
+  margin: 0 auto;
+  margin-top: 2rem;
+  padding: 20px 10px;
+  text-align: center;
+  border: 1px solid #331d14;
+  width: 50%;
+}
+
+#assignments__container {
+  margin-bottom: 3rem;
+}
+
+#games-table__head {
+  font-weight: bold;
+}
+
+td {
+  padding: 0;
+  margin: 0;
+}
+
+#assignments__container a{
+  display: block;
+  color:#333;
+  text-decoration: underline;
+}
+
+.assignment__image {
+  max-width: 500px; 
+  margin-bottom: 2rem;
+  border-radius: 3px; 
+}
+
+.assignment__image:hover {
+  transform: scale(1.1);
+  transition: 1s;
+  opacity: 0.7;
+}
+
+#assignments__container {
+  width: 90%;
+  text-align: center;
+}
+.assignment p {
+  margin-bottom: 2rem;
+}
+
+#me {
+  text-align: center;
+  margin: 0;
+  padding: 4rem 0; 
+}
+
+#MyPic {
+  margin: 0 auto;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-image: url(../img/mypic.jpg);
+  background-size: cover; 
+  background-position: 40% 30%; 
+  box-shadow: 0 0 10px 5px white;
+}
+
+#my__story {
+  max-width: 35rem;
+  width: 100%;
+  margin: 0 auto;
+}
+
+h2 {
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+  width: 60%;
+  border: 0px;
+}
+
+footer {
+  text-align: center;
+  letter-spacing: 1px;
+  background-image:  url(../img/walking-woman-on-sand.jpg);
+  filter: contrast(200%);
+  background-size: cover; 
+  background-position:  10% 100%;
+  color: #fff;
+}
+
+footer p {
+  padding: 1rem 0;
+}
+
+footer span a {
+  margin-right: 30px;
+  color: #fff;
+}
+
+#footer__icons{
+  width: 15vw;
+  display: flex;
+  padding-bottom: 1rem;
+
+}

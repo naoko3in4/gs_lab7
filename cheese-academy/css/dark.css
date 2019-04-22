@@ -1,0 +1,40 @@
+body, .feature-text__container,
+.access__container, #game__text {
+  background: #222;
+  color: #eaeaea;
+}
+
+.heading--orange {
+  color: #4d4d4d;
+}
+
+.nav {
+  color: #eaeaea;
+}
+
+.nav:hover {
+  color: #333;
+}
+
+#nav-scroll-version__container {
+  background-color: #333;
+  color: #eaeaea;
+}
+
+header, footer {
+  background: #4d4d4d;
+  color: #eaeaea;
+}
+
+main, .about__pics,
+.feature-image, .news__image, iframe {
+  filter: hue-rotate(90deg);
+}
+
+button {
+  background: #333;
+}
+
+.news__image:hover {
+  filter: sepia(100%);
+}

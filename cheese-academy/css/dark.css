@@ -38,3 +38,11 @@ button {
 .news__image:hover {
   filter: sepia(100%);
 }
+
+#modal {
+  background: gray;
+}
+
+#modal__close {
+  border: 1px solid #f2f2f2;
+}

@@ -1,3 +1,8 @@
+@media screen and (max-width:1010px) {
+  .news__image {
+    width: 100%;
+}
+
 @media screen and (max-width:1000px) {
   .feature-text__container {
     padding: 0;
@@ -6,12 +11,7 @@
   .feature-text__container p {
     margin: 0 2rem 3rem;
   }
-
-  /* #nav-scroll-version__container {
-    display: none;
-  } */
 }
-
 
 
 @media screen and (max-width:800px){

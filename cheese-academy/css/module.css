@@ -1,6 +1,7 @@
 @media screen and (max-width:1010px) {
   .news__image {
     width: 100%;
+  }
 }
 
 @media screen and (max-width:1000px) {
@@ -13,7 +14,6 @@
   }
 }
 
-
 @media screen and (max-width:800px){
   header {
     display: flex;
@@ -25,7 +25,7 @@
   }
 
   .nav {
-    display: none;   
+    display: none;
   }
 
   #nav-scroll-version__container {
@@ -34,7 +34,6 @@
 
   .menu-trigger__container {
     margin-bottom: 0;
-    
   }
 
   .menu-trigger,
@@ -94,7 +93,7 @@
   .about__pics__container {
     flex-wrap: wrap;
   }
-  
+
   .about__pics-box {
     width: 50%;
   }
@@ -144,7 +143,7 @@
   .about__wrapper p,
   .course {
     padding: 0 1rem;
-  } 
+  }
 
   .feature-box {
     display: inline-block;
@@ -156,7 +155,7 @@
     display: block;
     background-size: cover;
   }
-  
+
   .feature-text__container {
     width: 100%;
   }
@@ -175,10 +174,8 @@
   .about__pics__container {
     flex-direction: column;
   }
-  
+
   .about__pics-box {
     width: 100%;
   }
-
-  
 }

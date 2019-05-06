@@ -28,8 +28,8 @@ a {
   margin: 0 auto;
   padding: 6rem 0 10rem;
   background-image:  url(../img/walking-woman-on-sand.jpg);
-  background-size: cover; 
-  background-position: 20% 70%; 
+  background-size: cover;
+  background-position: 20% 70%;
   filter: contrast(200%);
 }
 
@@ -104,12 +104,13 @@ td {
 }
 .assignment p {
   margin-bottom: 2rem;
+  max-width: 60rem;
 }
 
 #me {
   text-align: center;
   margin: 0;
-  padding: 4rem 0; 
+  padding: 4rem 0;
 }
 
 #MyPic {

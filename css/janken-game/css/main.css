@@ -1,0 +1,155 @@
+body {
+  background-color: #e6d3d3;
+  max-width: 100rem;
+  user-select: none;
+  font-family: 'Sawarabi Gothic', sans-serif;
+}
+
+/* 入室画面 */
+#entry__container {
+  width: 18rem;
+  margin: 0 auto;
+}
+
+#entry__box {
+  margin: 4rem auto 0;
+  padding: 2rem 1rem;
+  background-color: #fafafa;
+  text-align: center;
+  box-shadow: 1px 1px 1px 0 rgba(0, 0, 0, 0.3);
+  border-radius: 3px;
+}
+
+#entry__box p {
+  color: #212121;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+#createRoom {
+  background-color: #4682b4;
+  color: #fff;
+}
+
+#enterInput {
+  border: 2px solid #ddd;
+  border-radius: 4px;
+  padding: 0.3rem;
+}
+
+input {
+  border-radius: 3px;
+}
+
+#errorMessage {
+  color: #ff5252;
+}
+
+/* じゃんけん画面 */
+#app__wrapper {
+  /* max-width: 80rem; */
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+
+}
+
+#currentRoomNum {
+  color: #ff5252;
+}
+
+#janken__container {
+  width: 100%;
+  padding: 0 1rem;
+  /* display: flex; */
+}
+
+#handsResult {
+  display: flex;
+  justify-content: space-around;
+}
+
+#jankenField {
+  display: flex;
+  justify-content: space-around;
+  margin: 0 auto;
+  max-width: 30rem;
+  width: 100%;
+  padding:2rem 0;
+}
+
+img {
+  width: 100%;
+  cursor: pointer;
+}
+
+.hand:hover {
+  top: 5px;
+  /* background-color: #eee; */
+  opacity: 0.6;
+  box-shadow: none;
+  transform: translate3d(0, 2px, 0);
+}
+
+/* bottun, input のラベル */
+.label {
+  font-size: 12px;
+}
+
+.btn {
+  background-color: #4682b4;
+  color: #fff;
+  border: 2px solid #ddd;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+}
+
+.hidden {
+  display: none;
+}
+
+#result {
+  color: #ff5252;
+  font-weight: bold;
+}
+
+#janken-sentence {
+  text-align: center;
+}
+
+#mask {
+  background: rgba(0,0,0,0.4);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left:0;
+}
+
+#modal__close {
+  max-width: 7rem;
+  padding: 0 1rem;
+  background: #fff;
+  border: 1px solid gray;
+  border-radius: 3px;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+}
+
+#modal__container {
+  margin: 0 auto;
+  max-width: 10rem;
+}
+
+#modal {
+  width: 50%;
+  background: #ffffe0;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  border-radius: 5px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+}

@@ -26,6 +26,7 @@ a {
   width: 100vw;
   letter-spacing: 1px;
   margin: 0 auto;
+  margin-bottom: 0.5rem;
   padding: 6rem 0 10rem;
   background-image:  url(../img/walking-woman-on-sand.jpg);
   background-size: cover;

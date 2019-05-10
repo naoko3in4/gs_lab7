@@ -1,0 +1,107 @@
+ body {
+   font-family: 'ZCOOL QingKe HuangYou', cursive;
+   font-family: 'Overpass', sans-serif;
+   background: #7dd1ce;
+   font-size: 62.5%;
+   max-width: 30rem;
+   margin: 0 auto;
+ }
+
+ #container {
+   width: 100%;
+   padding-top: 2rem;
+   text-align: center;
+ }
+
+ .today {
+  font-size: 3rem;
+  font-weight: bold;
+  font-family: 'ZCOOL QingKe HuangYou', cursive;
+  letter-spacing: 0.2rem;
+  margin-bottom: 1rem;
+}
+
+.start {
+  text-align: center;
+  font-weight: bold;
+  background: #ff4500;
+  letter-spacing: 2px;
+}
+
+.start,
+#save,
+#see {
+  color: white;
+}
+
+.start,
+.controlBtn {
+  padding: 0.5rem 1rem;
+  border-radius: 3px;
+}
+
+.start:hover,
+.controlBtn:hover {
+  filter: saturate(150%);
+}
+
+
+.count {
+  font-size: 2rem;
+}
+
+textarea {
+  margin: 0 auto;
+  width: 12rem;
+  height: 20rem;
+  border-radius: 7px;
+}
+
+::placeholder {
+  color: #7dd1ce;
+}
+
+.controlBtn {
+  width: 4rem;
+  margin: 0 auto;
+  margin-bottom: 0.5rem;
+}
+
+#save {
+  background: #4267b2;
+}
+
+#clear {
+  background: #fff;
+  color: #4267b2;
+}
+
+#see {
+  font-weight: bold;
+}
+
+#see:hover {
+  border: 2px solid #4267b2;
+  transform: 0.2s;
+}
+
+#article__container {
+  width: 100%;
+}
+
+table {
+  margin: 0 auto;
+  max-width: 28rem;
+  width: 100%;
+  word-break: break-all;
+}
+
+th {
+  width: 17vw;
+  padding-left: 2rem;
+}
+
+td {
+  width: 80vw;
+  padding-right: 1rem;
+}

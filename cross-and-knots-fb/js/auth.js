@@ -39,27 +39,30 @@ auth.onAuthStateChanged(user => {
 const createRoom = () => {
   const user = auth.currentUser;
   // 部屋番号作る
-  const num = Math.round(Math.random * 10000);
+  const num = Math.round(Math.random() * 10000);
+  console.log(num);
   roomNum = num;
   myRole = 'host';
 
 // FBに userCollectionをつくる＆部屋番号もったdocument作成
   const roomuserCollection =  db.collection('rooms').doc(`room${roomNum}`).collection('users');
+  console.log(roomNum);
   roomuserCollection.get()
   .then(doc => {
     if(doc.host) {
       return;
     }
     roomuserCollection.doc('host').set({
-      uid: user.id
+      uid: user.uid
     })
   })
 }
+
 // ゲストがルームを入力して入る
 enterRoom.addEventListener('submit', e => {
   console.log(enterRoom);
   const inputRoomNum = document.getElementById('input-room-number').value;
   console.log(inputRoomNum);
-  roomNUm = inputRoomNum;
+  roomNum = inputRoomNum;
   console.log(roomNUm);
 })

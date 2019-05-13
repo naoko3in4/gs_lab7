@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Sawarabi+Gothic|Titillium+Web" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+
+  <title>collect and answer</title>
+</head>
+<body onload="init()">
+  <div id="stage">
+    <div id="score"></div>
+    <div id="slot__container">
+      <button id="start" class="btn">START</button>
+      <button id="stop" class="hidden btn">STOP</button>
+      <div id="seconds"></div>
+      <table id="table">
+        <tr>
+          <td class="apple fruits" id="0">りんご</td>
+          <td class="grape fruits" id="1">ぶどう</td>
+          <td class="orange fruits" id="2">みかん</td>
+        </tr>
+        <tr>
+          <td class="grape fruits" id="3">ぶどう</td>
+          <td class="orange fruits" id="4">みかん</td>
+          <td class="apple fruits" id="5">りんご</td>
+        </tr>
+        <tr>
+          <td class="orange fruits" id="6">みかん</td>
+          <td class="apple fruits" id="7">りんご</td>
+          <td class="grape fruits" id="8">ぶどう</td>
+        </tr>
+      </table>
+    </div>
+    <div id="quiz__container">
+      <div id="quiz__text"></div>
+      <div id="my-answer-options">
+        <div id="option1"></div>
+        <div id="option2"></div>
+        <div id="option3"></div>
+      </div>
+    </div>
+    <div id="answer"></div>
+    <div id="completed"></div>
+    <button id="retry" class="hidden">もう一度する</button>
+  </div>
+  <script src="js/main.js"></script>
+</body>
+</html>

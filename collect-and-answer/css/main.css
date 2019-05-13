@@ -1,0 +1,116 @@
+* {
+  background-color: #bc8f8f;
+  margin: 0;
+}
+
+body {
+  text-align: center;
+  font-family: 'Titillium Web', sans-serif;
+  font-family: 'Sawarabi Gothic', sans-serif;
+  font-size: 62.5%;
+  user-select: none;
+}
+
+#stage {
+  width: 100%;
+  font-size: 1.2rem;
+  padding-top: 2rem;
+}
+
+#slot__container {
+  max-width: 30rem;
+  margin: 0 auto;
+  padding: 0 1rem;
+  padding-bottom: 2rem;
+}
+
+#seconds,
+#score {
+  margin-bottom: 1rem;
+}
+
+#completed {
+  color: rgb(243, 233, 231);
+  font-weight: bold;
+  letter-spacing: 2px;
+  padding: 2rem 0;
+}
+
+.btn {
+  background-color: #664e4e;
+}
+
+#retry,
+.btn {
+  padding: 1rem 2rem;
+  margin-bottom: 1rem;
+  color: #f2f2f2;
+  font-size: 1.2rem;
+  border-radius: 5px;
+}
+
+.btn, table {
+  cursor: pointer;
+}
+
+#retry {
+  border: 2px solid #f2f2f2;
+}
+
+.btn:active
+#retry {
+  position: relative;
+  top: 5px;
+  transition: 0.2s;
+}
+
+table {
+  table-layout: fixed;
+  text-align: center;
+  margin: 0 auto;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+td {
+  width: 3rem;
+  height: 3rem;
+  border: 2px solid black;
+}
+
+.apple {
+  background-color: #f08080;
+}
+
+.grape {
+  background-color: #e4adff;
+}
+
+.orange {
+  background-color: #ffd6ad;
+}
+
+.fruits {
+  opacity: 0.4;
+}
+
+.fruit--active {
+  opacity: 1;
+  filter: saturate(300%);
+}
+
+.hidden {
+  display: none;
+}
+
+#option1:hover,
+#option2:hover,
+#option3:hover,
+#answer {
+  background-color: #e6cfd2;
+}
+
+#quiz__text {
+  margin-bottom: 1rem;
+  font-weight: bold;
+}

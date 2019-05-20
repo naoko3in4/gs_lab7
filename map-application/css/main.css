@@ -1,0 +1,91 @@
+html {
+  height: 100%;
+  margin: 0 auto;
+  padding: 0;
+  font-size: 62.5%;
+  text-align: center;
+  font-family: 'Noto Sans JP', sans-serif;
+  background: #F4F6F7;
+  user-select: none;
+}
+
+body {
+  font-size: 1.2rem;
+  padding-bottom: 3rem;
+}
+
+h1 {
+  font-size: 3rem;
+  padding: 3rem 0 1rem;
+  margin: 0;
+  color: #ff4d00;
+}
+
+#myMap {
+  margin: 0 auto;
+  width: 80vw;
+  height: 40vw;
+  margin-bottom: 2.5rem;
+}
+
+#search {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#form {
+  display: flex;
+  margin: 0 auto;
+  font-size: 1.2rem;
+  border: 1px solid  #ff4d00;
+  width: 30%;
+  margin-bottom: 1rem;
+}
+
+#input {
+  width: 80%;
+}
+
+#btn {
+  width: 20%;
+}
+
+#input, #btn{
+  box-sizing: border-box;
+  border: none;
+  font-size: 1.5rem;
+  padding: 0.5rem;
+}
+
+#btn {
+  background: #ff4d00;
+  color: #fff;
+}
+
+#list {
+  font-size: 1.2rem;
+  margin-bottom: 3rem;
+}
+
+li {
+  font-size: 1.4rem;
+  padding: 1rem;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover,
+p:hover {
+  color: #ff4d00;
+}
+
+.DateTime {
+  color: #239B56;
+  font-weight: bold;
+}
+

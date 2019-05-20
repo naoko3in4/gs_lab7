@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Search Events</title>
+<link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+<!-- MAP[START] -->
+<h1>イベントを検索する</h1>
+<div id="myMap"></div>
+<!-- MAP[END] -->
+<div id="search">
+  <form id="form">
+    <input type="text" id="input" placeholder="キーワードで検索">
+    <button id="btn">
+      検索
+    </button>
+  </form>
+  <div id="language_options">
+    <p>言語から検索（↓下から選んでクリック）</p>
+  </div>
+  <div id="eventlist"></div>
+  <ul id="list"></ul>
+</div>
+
+<script src='https://www.bing.com/api/maps/mapcontrol?callback=GetMap&key=AgwN30biS5ktnjcwIj73nn-KcWXoYvyC_hfjgzq0qZbnvuK_tPxFH0a4bSDjrmoV' async defer></script>
+<script src="js/BmapQuery.js"></script>
+<script src="js/map.js"></script>
+<script src="js/getEvent.js"></script>
+
+</body>
+</html>

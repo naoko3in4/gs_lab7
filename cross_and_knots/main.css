@@ -1,0 +1,119 @@
+* {
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+  font-size: 62.5%;
+  max-width: 500px;
+  width: 100%;
+  font-family: 'M PLUS 1p', sans-serif;
+}
+
+body {
+  background-color: #bdb76b;
+}
+
+.hidden {
+  display: none;
+}
+
+#entry-container {
+  max-widtH: 30rem;
+  background-color: #fff;
+  margin-top: 5rem;
+  padding: 1rem;
+}
+
+#entry__box,
+h2, label,
+#create-room,
+#currentRoomNum,
+#currentUserId,
+.btn, input,
+#turnMessage {
+  font-size: 1.2rem;
+}
+
+
+#entry__box {
+  width: 100%;
+}
+
+h2, label {
+  margin-bottom: 0.5rem;
+}
+
+#create-room {
+  background-color: #bd6c71;
+  width: 10rem;
+  padding: 1.5rem;
+  color: #fff;
+  border-radius: 4px;
+}
+
+#info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.btn {
+  background-color: #bd6c71;
+  border: 1px solid #fff;
+  width: 5rem;
+  height: 5rem;
+  border-radius: 100%;
+  color: #fff;
+}
+
+input {
+  max-width: 10rem;
+  padding: 0.5rem 0;
+  border: 1px solid #bd6c71;
+  margin-bottom: 0.5rem;
+}
+
+#app__container {
+  max-width: 30rem;
+  padding: 2rem 0;
+}
+
+td, #result {
+  font-size: 3rem;
+}
+
+#result {
+  width: 100%;
+}
+
+.result__sentence {
+  font-size: 2rem;
+}
+
+.result-who__maru,
+.result-who__batsu {
+  font-weight: bold;
+  font-size: 3rem;
+  letter-spacing: 1rem;
+}
+
+.result-who__maru {
+  color: #bd6c71;
+}
+
+.result-who__batsu {
+  color: #6c9abd ;
+}
+
+#table {
+  border-collapse: collapse;
+  box-sizing: border-box;
+  border: 4px solid #bdb76b;
+  /* display: inline-block; */
+}
+
+td {
+  width: 5rem;
+  height: 9rem;
+  border: 2px solid black;
+}
+

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=M+PLUS+1p" rel="stylesheet">
+  <link rel="stylesheet" href="main.css">
+  <title>CrossAndKnots</title>
+</head>
+<body onload="init()">
+  <div id="entry-container">
+    <div id="entry__box">
+      <h2>マルバツゲーム</h2>
+      <button id="create-room" onclick="createRoom()">
+        新しい部屋を作る
+      </button>
+        <form id="enter-room">
+          <label for="inputRoomNumber">
+            ルームを指定して入室
+          </label>
+          <div id="input__wrapper">
+            <input
+            id="inputRoomNumber"
+            type="text"
+            name="room-number"
+            placeholder="入力したらenter">
+            <p id="errorMessage"></p>
+          </div>
+        </form>
+    </div>
+  </div>
+  <!-- 入室前は非表示。入室後表示。class="hidden" つける -->
+  <div id="app__container" class="hidden">
+    <div id="info">
+      <div id="roomAndId">
+          <p id="currentRoomNum"></p>
+          <p id="currentUserId"></p>
+        </div>
+        <div id="btn__wrapper">
+          <button class="btn" onclick="authLogout()">退出</button>
+        </div>
+    </div>
+    <div id="stage">
+      <table id="table"></table>
+      <div id="turnMessage">待機中</div>
+      <div id="result"></div>
+    </div>
+  </div>
+  <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase-firestore.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase-auth.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/fb.js"></script>
+  <script src="js/auth.js"></script>
+  <script src="js/game.js"></script>
+  <script src="js/hand.js"></script>
+</body>
+</html>

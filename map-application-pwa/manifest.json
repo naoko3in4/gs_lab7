@@ -1,0 +1,21 @@
+{
+  "name"              : "map",
+  "short_name"        : "map",
+  "start_url"         : "./",
+  "display"           : "standalone",
+  "orientation"       : "portrait",
+  "background_color"  : "#333",
+  "theme_color"       : "#333",
+  "icons": [
+        {
+          "src"           : "./search.png",
+          "sizes"         : "192x192",
+          "type"          : "image/png"
+        },
+        {
+          "src"           : "./search.png",
+          "sizes"         : "512x512",
+          "type"          : "image/png"
+        }
+    ]
+}

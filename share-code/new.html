@@ -9,7 +9,7 @@
 </head>
 <body>
   <h1>Share Code</h1>
-  <div id="new"><a href="./index.html">投稿一覧</a></div>
+  <div id="new"><a href="./index.html" target="_blank">投稿一覧</a></div>
 
   <!--************************************************************
   新規投稿 editor等
@@ -17,6 +17,8 @@
   <h2>新規投稿</h2>
   <div id="new-post">
     <form id="form-files">
+      <label for="article_title">記事タイトル</label>
+      <input type="text" id="article_title" placeholder="記事タイトルを入力">
       <p>
         動画アップロード<input type="file" id="setVideo" multiple accept="video/*">
       </p>
@@ -30,12 +32,20 @@
     </form>
   </div>
 
+  <!--************************************************************
+  自分の投稿内容
+  **************************************************************-->
   <div id="list__wrapper">
     <h2>投稿内容</h2>
     <div id="post-list">
-      <video id="showVideo" src=""></video>
+      <p id="showTitle"></p>
+      <!-- <video id="showVideo" src=""></video> -->
+      <video id="showVideo" controls>
+        <source  src="" type="video">
+      </video>
       <pre><code id="showCode"></code></pre>
       <p id="showMessage"></p>
+
     </div>
   </div>
 

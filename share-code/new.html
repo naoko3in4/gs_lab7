@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./css/main.css">
+  <title>Code Share/new</title>
+</head>
+<body>
+  <h1>Share Code</h1>
+  <div id="new"><a href="./index.html">投稿一覧</a></div>
+
+  <!--************************************************************
+  新規投稿 editor等
+  **************************************************************-->
+  <h2>新規投稿</h2>
+  <div id="new-post">
+    <form id="form-files">
+      <p>
+        動画アップロード<input type="file" id="setVideo" multiple accept="video/*">
+      </p>
+      <button type="submit">ファイル送信</button>
+    </form>
+
+    <p>コード・メッセージ入力</p>
+    <form id="form_code_message" onsubmit="codeSubmit(); return false;">
+      <div id="editorArea" style="height: 500px"></div>
+      <input type="text" id="message" placeholder="メッセージ/解説 入力後Enter">
+    </form>
+  </div>
+
+  <div id="list__wrapper">
+    <h2>投稿内容</h2>
+    <div id="post-list">
+      <video id="showVideo" src=""></video>
+      <pre><code id="showCode"></code></pre>
+      <p id="showMessage"></p>
+    </div>
+  </div>
+
+<!-- Firebase -->
+<script src="https://www.gstatic.com/firebasejs/5.10.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.10.1/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.10.1/firebase-storage.js"></script>
+<!-- <script src="https://www.gstatic.com/firebasejs/5.10.1/firebase-auth.js"></script>  -->
+<script src="./js/config/fb.js"></script>
+<script src="./js/config/main.js"></script>
+<script src="./js/storage.js"></script>
+<script src="./js/code-messages.js"></script>
+
+
+<!-- editor -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.2.0/ace.js"></script>
+<!-- editor Emmet -->
+<script src="https://cloud9ide.github.io/emmet-core/emmet.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.2.0/ext-emmet.js"></script>
+<!-- editor 自動補完 -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.2.0/ext-language_tools.js"></script>
+<script src="./js/config/editor.js"></script>
+
+</body>
+</html>

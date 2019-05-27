@@ -1,0 +1,22 @@
+body {
+  margin: 0 auto;
+  font-size: 62.5%;
+  padding: 0;
+  text-align: center;
+
+}
+
+#editorArea {
+  text-align: left;
+}
+
+#list__wrapper {
+  width: 80vw;
+  margin: 0 auto;
+
+}
+
+#post-list {
+  width: 100%;
+  text-align: left;
+}

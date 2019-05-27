@@ -34,7 +34,7 @@ const codeSubmit = async() => {
     id = doc.id;
     console.log(`${doc.id} added!`);
     // コード・メッセージ保存成功のアラートを出す
-    alert('コード・メッセージ保存しました');
+    alert('すべて保存しました（タイトル・動画・コード・メッセージ）');
     // message (input)を空にする
     message.value = '';
     editor.focus();
@@ -111,6 +111,7 @@ const showListDetail = (e) => {
   detailCode.textContent = found[2];
   detailMessage.textContent = found[3];
 }
+
 
 
 

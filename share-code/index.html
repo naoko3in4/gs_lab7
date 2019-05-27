@@ -4,13 +4,18 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js?desert"></script> -->
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans+HK&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="./css/code.css">
   <link rel="stylesheet" href="./css/main.css">
   <title>Code Share/list</title>
 </head>
 <body onload="init()">
-  <h1>Share Code</h1>
-
-  <div id="new"><a href="./new.html" target="_blank">投稿する</a></div>
+  <div id="wrapper">
+  <header>
+    <h1>Shar<span>e</span> Code</h1>
+    <div id="new"><a href="./new.html">投稿する</a></div>
+  </header>
 
   <div id="list__wrapper">
     <h2>投稿一覧</h2>
@@ -20,23 +25,33 @@
   </div>
 
   <!--************************************************************
-  記事詳細  別シートに分けたい
+  記事詳細
   **************************************************************-->
   <div id="detailList__wrapper">
     <h2>記事詳細</h2>
     <div id="detail__container">
+      <p class="description">タイトル: </p>
       <p class="detail" id="detail-title"></p>
       <!-- ビデオ詳細 -->
       <video class="detail" id="detail-video" controls>
         <source  src="" type="video">
       </video>
       <!-- コード詳細 -->
-      <pre class="detail" id="detail-code"><code></code></pre>
+      <!-- <pre class="prettyprint" id="detail-code"><code></code></pre> -->
+      <p class="description">コード:</p>
+      <pre class="prettyprint" id="detail-code"></pre>
       <!-- メッセージ詳細 -->
+      <p class="description">メッセージ: </p>
       <p class="detail" id="detail-message"></p>
+      <!-- <p class="detail" id="detail-message"></p> -->
     </div>
   </div>
 
+  <footer></footer>
+</div>
+
+<!-- code prettify  code.cssとセット-->
+<script src="./js/prettify.js"></script>
 <!-- Firebase -->
 <script src="https://www.gstatic.com/firebasejs/5.10.1/firebase-app.js"></script>
 <script src="https://www.gstatic.com/firebasejs/5.10.1/firebase-firestore.js"></script>

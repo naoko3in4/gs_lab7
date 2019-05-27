@@ -1,13 +1,43 @@
 body {
   margin: 0 auto;
+  min-height: 100vh;
   font-size: 62.5%;
   padding: 0;
   text-align: center;
+  font-family: 'Noto Sans HK', sans-serif;
+}
 
+header, footer {
+  background-color: #46C4CD;
+  color: #fff;
+}
+
+h1 {
+  margin-top: 0;
+  padding: 1rem 0;
+  /* font-family: 'Noto Sans HK', sans-serif; */
+}
+
+h1 > span,
+.mark, .description {
+  color: #ff6e40;
+}
+
+h2 {
+  color: #46C4CD;
+}
+
+button {
+  background-color: #ff6e40;
+  padding: 0.5rem 1rem;
+  color: #fff;
+  border-radius: 3px;
 }
 
 #editorArea {
+  margin: 0 auto;
   text-align: left;
+  width: 90vw;
 }
 
 #list__wrapper {
@@ -28,3 +58,15 @@ body {
 /* #detail__container {
   text-align: left;
 } */
+
+#detail-code {
+  text-align: left;
+  width: 90vw;
+  margin: 0 auto;
+}
+
+footer {
+  padding: 2rem 0;
+  /* position: absolute; */
+  /* bottom: 0; */
+}

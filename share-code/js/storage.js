@@ -43,29 +43,13 @@ formFiles.addEventListener('submit', async(e) => {
     uploadRef.getDownloadURL().then(url => {
       console.log(url);
       videoUrl = url;
-      // html に表示する
-      // videoSample.style.backgroundImage = "url("+url+")";
       showVideo.src = url;
       // アラート出す
-      alert('アップロードで保存しました')
-      // console.log(videoSample.style.backgroundImage = "url("+url+")");
+      alert('動画アップロードのみ完了。コード・メッセージ入力してください。')
     }).catch(error => {
       console.log(error);
     });
   });
-  // makeVideoList();
 });
-
-//*****************************************************
-//  ダウンロード
-//*****************************************************
-// ビデオダウンロード
-// const makeVideoList = () => {
-//   videoPath = storage.ref('videos/');
-//   console.log(videoPath);
-//   videoPath.getDownloadURL().then((videoUrl) => {
-//     showVideo.src = videoUrl;
-//   })
-// }
 
 

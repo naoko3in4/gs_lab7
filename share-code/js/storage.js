@@ -6,9 +6,6 @@ const formFiles = $id('form-files');
 const showVideo = $id('showVideo');
 
 // グローバル変数
-let file_name;
-let blob;
-
 let v_file_name;
 let vBlob;
 
@@ -23,10 +20,10 @@ setVideo.addEventListener('change', e => {
   // file名を取得
   v_file_name = file[0].name;
   // blob形式に変換
-  Bblob = new Blob(file, {
+  vBlob = new Blob(file, {
     type: 'video/quicktime'
   });
-  console.warn(Bblob);
+  console.warn(vBlob);
 });
 
 // ビデオアップロードsubmit で処理開始
@@ -37,7 +34,7 @@ formFiles.addEventListener('submit', async(e) => {
   // storage の area_images への参照を定義
   let uploadRef = storage.ref('videos/').child(v_file_name);
   // アップロードしたファイルのurlを取得
-  await uploadRef.put(Bblob).then(snapshot => {
+  await uploadRef.put(vBlob).then(snapshot => {
     console.log(snapshot.state);
     // アップロードしたファイルのurlを取得
     uploadRef.getDownloadURL().then(url => {

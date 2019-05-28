@@ -11,7 +11,7 @@
 <body>
   <header>
     <h1>Shar<span>e</span> Code</h1>
-    <div id="new"><a href="./index.html">投稿一覧</a></div>
+    <div><a href="./index.html" class="changePage">投稿一覧へ→</a></div>
   </header>
 
   <!--************************************************************
@@ -20,19 +20,25 @@
   <h2>新規投稿</h2>
   <div id="new-post">
     <form id="form-files">
-      <label for="article_title"><span class="mark">※</span>記事タイトル</label>
-      <input type="text" id="article_title" placeholder="記事タイトルを入力">
-      <p>
-        <span class="mark">※</span>動画アップロード<input type="file" id="setVideo" multiple accept="video/*">
-      </p>
+      <div class="left__container">
+        <label for="article_title" class="left"><span class="mark">※</span>記事タイトル</label>
+        <input type="text" id="article_title" class="left" placeholder="記事タイトルを入力">
+        <p>
+          <span class="mark">※</span>動画アップロード<input type="file" id="setVideo" multiple accept="video/*">
+        </p>
+      </div>
       <button type="submit">動画ファイル送信</button>
     </form>
 
     <p>コード・メッセージ入力</p>
     <form id="form_code_message" onsubmit="codeSubmit(); return false;">
       <div id="editorArea" style="height: 500px"></div>
-      <label for="article_message"><span class="mark">※</span>メッセージ</label>
-      <input type="text" id="message" placeholder="メッセージ/解説 入力後Enter">
+      <div class="left__container">
+        <label for="article_message" class="left"><span class="mark">※</span>メッセージ</label>
+        <input type="text" id="message" placeholder="メッセージ/解説 入力後Enter">
+      </div>
+      <!-- <label for="article_message"><span class="mark">※</span>メッセージ</label>
+      <input type="text" id="message" placeholder="メッセージ/解説 入力後Enter"> -->
     </form>
   </div>
 
@@ -49,11 +55,10 @@
       </video>
       <pre><code id="showCode"></code></pre>
       <p id="showMessage"></p>
-
     </div>
   </div>
 
-  <footer></footer>
+  <footer>© Naoko</footer>
 
 <!-- Firebase -->
 <script src="https://www.gstatic.com/firebasejs/5.10.1/firebase-app.js"></script>

@@ -11,44 +11,43 @@
   <title>Code Share/list</title>
 </head>
 <body onload="init()">
-  <div id="wrapper">
-  <header>
-    <h1>Shar<span>e</span> Code</h1>
-    <div id="new"><a href="./new.html">投稿する</a></div>
-  </header>
+  <id id="wrapper">
+    <header>
+      <h1>Shar<span>e</span> Code</h1>
+      <div><a href="./new.html" class="changePage">投稿する→</a></div>
+    </header>
 
-  <div id="list__wrapper">
-    <h2>投稿一覧</h2>
-      <ul id="list__container">
-        <!-- <li class="list"></li> -->
-      </ul>
-  </div>
-
-  <!--************************************************************
-  記事詳細
-  **************************************************************-->
-  <div id="detailList__wrapper">
-    <h2>記事詳細</h2>
-    <div id="detail__container">
-      <p class="description">タイトル: </p>
-      <p class="detail" id="detail-title"></p>
-      <!-- ビデオ詳細 -->
-      <video class="detail" id="detail-video" controls>
-        <source  src="" type="video">
-      </video>
-      <!-- コード詳細 -->
-      <!-- <pre class="prettyprint" id="detail-code"><code></code></pre> -->
-      <p class="description">コード:</p>
-      <pre class="prettyprint" id="detail-code"></pre>
-      <!-- メッセージ詳細 -->
-      <p class="description">メッセージ: </p>
-      <p class="detail" id="detail-message"></p>
-      <!-- <p class="detail" id="detail-message"></p> -->
+    <div id="list__wrapper">
+      <h2>投稿一覧</h2>
+        <ul id="list__container">
+          <!-- <li class="list"></li> -->
+        </ul>
     </div>
-  </div>
 
-  <footer></footer>
-</div>
+    <!--************************************************************
+    記事詳細
+    **************************************************************-->
+    <div id="detailList__wrapper">
+      <h2>記事詳細</h2>
+      <div id="detail__container">
+        <p class="description">タイトル</p>
+        <p class="detail" id="detail-title"></p>
+        <!-- ビデオ詳細 -->
+        <video class="detail" id="detail-video" controls>
+          <source  src="" type="video">
+        </video>
+        <!-- コード詳細 -->
+        <!-- <pre class="prettyprint" id="detail-code"><code></code></pre> -->
+        <p class="description">コード</p>
+        <pre class="prettyprint" id="detail-code"></pre>
+        <!-- メッセージ詳細 -->
+        <p class="description">メッセージ</p>
+        <p class="detail" id="detail-message"></p>
+        <!-- <p class="detail" id="detail-message"></p> -->
+      </div>
+    </div>
+    <footer>© Naoko</footer>
+  </div>
 
 <!-- code prettify  code.cssとセット-->
 <script src="./js/prettify.js"></script>

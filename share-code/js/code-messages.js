@@ -78,7 +78,6 @@ const getCollection = () => {
     // index.htmlへタイトル表示
     makeList();
     // post.htmlへ詳細表示
-    // showListDetail();
   })
   .catch((error) => {
     console.log(`データ取得に失敗しました${error}`);
@@ -102,10 +101,7 @@ const makeList = () => {
 const showListDetail = (e) => {
   const title = e.srcElement.innerText;
   // クリックしたタイトルが一致するものをbuffの中から探す
-  const found = buff.find((element) => {
-    return element[0] === title;
-  })
-
+  const found = buff.find(element => element[0] === title);
   detailTitle.innerHTML = found[0];
   detailVideo.src = found[1];
   detailCode.textContent = found[2];

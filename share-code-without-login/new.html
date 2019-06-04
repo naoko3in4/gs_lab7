@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans+HK&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/main.css">
+  <title>Share Code/new</title>
+</head>
+<body>
+  <header>
+    <h1>Shar<span>e</span> Code</h1>
+    <div><a href="./index.html" class="changePage">投稿一覧へ→</a></div>
+  </header>
+
+  <!--************************************************************
+  新規投稿 editor等
+  **************************************************************-->
+  <h2>新規投稿</h2>
+  <div id="new-post">
+    <form id="form-files">
+      <div class="left__container">
+        <label for="article_title" class="left"><span class="mark">※</span>記事タイトル</label>
+        <input type="text" id="article_title" class="left" placeholder="記事タイトルを入力">
+        <p>
+          <span class="mark">※</span>動画アップロード<input type="file" id="setVideo" multiple accept="video/*">
+        </p>
+      </div>
+      <button type="submit">動画ファイル送信</button>
+    </form>
+
+    <p>コード・メッセージ入力</p>
+    <form id="form_code_message" onsubmit="codeSubmit(); return false;">
+      <div id="editorArea" style="height: 500px"></div>
+      <div class="left__container">
+        <label for="article_message" class="left"><span class="mark">※</span>メッセージ</label>
+        <input type="text" id="message" placeholder="メッセージ/解説 入力後Enter">
+      </div>
+    </form>
+  </div>
+
+  <!--************************************************************
+  自分の投稿内容
+  **************************************************************-->
+  <div id="list__wrapper">
+    <h2>投稿内容</h2>
+    <div id="post-list">
+      <p id="showTitle"></p>
+      <video id="showVideo" controls>
+        <source  src="" type="video">
+      </video>
+      <pre><code id="showCode"></code></pre>
+      <p id="showMessage"></p>
+    </div>
+  </div>
+
+  <footer>© Naoko</footer>
+
+<!-- Firebase -->
+<script src="https://www.gstatic.com/firebasejs/5.10.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.10.1/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.10.1/firebase-storage.js"></script>
+<script src="./js/config/fb.js"></script>
+<script src="./js/config/main.js"></script>
+<script src="./js/storage.js"></script>
+<script src="./js/code-messages.js"></script>
+
+
+<!-- editor -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.2.0/ace.js"></script>
+<!-- editor Emmet -->
+<script src="https://cloud9ide.github.io/emmet-core/emmet.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.2.0/ext-emmet.js"></script>
+<!-- editor 自動補完 -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.2.0/ext-language_tools.js"></script>
+<script src="./js/config/editor.js"></script>
+
+</body>
+</html>
